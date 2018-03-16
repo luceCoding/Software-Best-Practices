@@ -29,8 +29,12 @@ public void testGetResponseAsXml() throws Exception {
 
 ### One assert per test per intent
 Assuming your tests only return TRUE for PASS and FALSE for FAIL.
-By having multiple asserts in a test, if that test fails, you won't know which assertion failed therefore requiring more time spent to identify the problem, making developers furious. Again, our objective is to be readable, having multiple asserts and grouping them all together does not support readability. It abstracts TOO much of what the tests really should be intended to do.
-Having the one assert per test rule will force tests to test one thing and only ONE thing at a time. Knowing the exact problem is better than knowing that the problem exists "somewhere over here".
+
+By having multiple asserts in a test, if that test fails, you won't know which assertion failed therefore requiring more time spent to identify the problem, making developers furious. Or it will tell you the line that broke.
+
+Again, our objective is to be readable, having multiple asserts and grouping them all together does not support readability. It abstracts TOO much of what the tests really should be intended to do. Ulitmate ideal is for a developer to look at the test's function name and immedately identify the problem without looking at the source code. THe name given to the test function would probraly be very generic since you are testing multiple things. If you have multiple asserts, the developer would have to spend time searching for the problem. Not a good use of his/her time.
+
+Having the one assert per test rule will force tests to test one thing and only ONE thing at a time. Knowing the exact problem is better than knowing that the problem exists "somewhere over here". Also having one assert eliminates many other variables and dependencies that may affect the test now or later.
 
 Another point to make, you should have one assert per intended behavior. That means, if you have a method where you can pass multiple parameters and it outputs different results each time, then you should make separate tests for each. For example, a method that checks if a string has numbers, special characters, size limit, etc.. this is a perfect example of having multiple tests. However, this is a general rule, if you had a combination problem, where your string could not have numbers in certain positions, best approach is to create a string generator loop that moves a number around the string and one assert within that loop.
 
