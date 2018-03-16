@@ -57,7 +57,7 @@ My question to you is, how do you know that the behavior of A() wouldn't change 
 
 *"But then the test would fail and it would find a problem."*
 
-Is it the correct problem? What if the intent was to make sure A(), B(), and C() were all indepent from each other. Then in the future a developer had to change it so B() and C() depends on A(). You created a test that was meant for the future and not the present. This is an example of writing the wrong test for the wrong reason.
+Is it the correct problem? What if the intent was to make sure A(), B(), and C() were all independent from each other. Then in the future a developer had to change it so B() and C() depends on A(). You created a test that was meant for the future and not the present. This is an example of writing the wrong test for the wrong reason.
 
 Some scenarios require multiple asserts and for good reason, for example, the case of a parser. Obvious you have to read from the beginning to the end of a sentence. Being off by one letter will ruining the parser's behavior, so its natural to add the getNextWord() method over and over while asserting the result.
 
