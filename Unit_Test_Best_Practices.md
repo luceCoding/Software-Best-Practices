@@ -41,11 +41,11 @@ Another point to make, you should have one assert per intended behavior. That me
 DO NOT combine multiple methods together while asserting after each method call.
 
 ```
-result_a = A();
+bool result_a = A();
 assert(result_a);
-result_b = B();
+bool result_b = B();
 assert(result_b);
-result_c = C();
+bool result_c = C();
 assert(result_c);
 ```
 
