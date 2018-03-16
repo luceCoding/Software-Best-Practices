@@ -45,10 +45,17 @@ result_c = C();
 assert(result_c);
 ```
 
-This is a recipe for disaster. You want to create your tests in the perspective of the user. What can the user play with and see without looking at the source code? In this scenario, how are you so sure that by calling method A() it does not affect the behavior of B() or C()? You don't. Quite frankly you have seen that the source code doesn't depend on each other, so everything looks good on your end. Now here is another question, how do you know that won't change in the future? How do you know that the behavior of A() wouldn't change in the future?
-If you were to split these methods in their separate tests, the 'intended' behavior that A() should be independent from B() and C() will stand. While allowing a future code change to add a new test to test the dependency added to A() and B() and C(). You see the difference? By having multiple methods in one test, you have 'indirectly' said, A() depends on B() and C(). While you wanted to say they are all strictly independent.
+This is a recipe for disaster. You want to create your tests in the perspective of the user. What can the user play with and see without looking at the source code? In this scenario, how are you so sure that by calling method A() it does not affect the behavior of B() or C()? You don't. 
 
-Only scenario that having multiple assert is reasonable maybe in a case of a parser. Obvious you have to read from the beginning to the end of a sentence. Being off by one letter will ruining the parser's behavior, so its natural to add the getNextWord() method over and over while asserting the result.
+*"But I already looked at the source code, they don't depend on each other!"*
+
+My question to you is, how do you know that the behavior of A() wouldn't change in the future?
+
+*"But then the test would fail and it would find a problem."*
+
+Is it the correct problem? What if the intent was to make sure A(), B(), and C() were all indepent from each other. Then in the future a developer had to change it so B() and C() depends on A(). You created a test that was meant for the future and not the present. This is an example of writing the wrong test for the wrong reason.
+
+Some scenarios require multiple asserts and for good reason, for example, the case of a parser. Obvious you have to read from the beginning to the end of a sentence. Being off by one letter will ruining the parser's behavior, so its natural to add the getNextWord() method over and over while asserting the result.
 
 ### Follow the Template Model
 A good model to follow is the Template Method. usage of the given, when, then clauses to create your tests.
