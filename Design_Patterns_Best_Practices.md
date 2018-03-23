@@ -7,6 +7,7 @@
   - Instead of having multiple ways of doing the same thing which indirectly increases maintenance effort. Design patterns can allow engineers to create a collection of items that engineers can easily piece together.
 - Deal with the issue of coupling
   - If code is too tightly coupled, it is hard for engineers to change the code without something else breaking.
+  - This also indirectly deals with relationships between classes, many design patterns are meant to deal with one-to-one or one-to-many relationships
 
 ### Design Patterns use combinations of the following:
 * Composition vs. Decomposition (Has-A vs. Is-A relationship)
