@@ -19,3 +19,4 @@
 * Observer
 * Factory
 * Decorator
+* Singleton
