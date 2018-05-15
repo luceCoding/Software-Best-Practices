@@ -13,6 +13,7 @@
 * Composition vs. Decomposition (Has-A vs. Is-A relationship)
 * Encapsulatation of variances
 * Concrete classes vs. dynamic classes (Compile time vs. run-time)
+* Hold vs. Wrap
 
 ### Design Patterns every software engineer should know
 * Strategy
@@ -20,3 +21,9 @@
 * Factory
 * Decorator
 * Singleton
+
+### Design Patterns Categories
+* Creational: ways and means of object instantiation
+* Structural: mutual composition of classes or objects
+* Behavioral: how classes or objects interact and distribute responsibilities among them
+* Each can be class-level or object-level
