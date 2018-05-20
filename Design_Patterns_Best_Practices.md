@@ -32,5 +32,10 @@
 When creating concrete objects, this is an area of frequent change and usually requires encapsulation with a design pattern.
 Don't code to an implementation(concrete class), instead code to an interface(abstract class).
 
+### Follow the Dependency Inversion Principle
+* No variable should hold a reference to a concrete class. (Don't use the new operator for a variable)
+* No class should derive from a concrete class.
+* No method should override an implemented method of any of its base class. (If you do this, your base class wasn't even an abstraction to begin with)
+
 ### Factory Pattern
 Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
