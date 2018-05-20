@@ -29,7 +29,7 @@
 * Each can be class-level or object-level
 
 ### Notes
-When creating concrete objects, this is an area of frequent change and is usually requires encapsulation with a design pattern.
+When creating concrete objects, this is an area of frequent change and usually requires encapsulation with a design pattern.
 
 ### Factory Pattern
 Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
