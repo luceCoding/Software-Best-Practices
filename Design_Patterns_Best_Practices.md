@@ -30,6 +30,7 @@
 
 ### Notes
 When creating concrete objects, this is an area of frequent change and usually requires encapsulation with a design pattern.
+Don't code to an implementation(concrete class), instead code to an interface(abstract class).
 
 ### Factory Pattern
 Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
