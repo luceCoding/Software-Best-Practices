@@ -27,3 +27,6 @@
 * Structural: mutual composition of classes or objects
 * Behavioral: how classes or objects interact and distribute responsibilities among them
 * Each can be class-level or object-level
+
+### Factory Pattern
+Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
