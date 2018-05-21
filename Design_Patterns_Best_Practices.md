@@ -48,5 +48,7 @@ However, during this defined place between creating this conrete instance, you m
 
 If you wanted to change this concrete instance in the future, how would you likely do it? Ideally, you'd like to just create a new class from scratch correct? That way, all changes and anything different about your new custom object is contain in this one class. You don't want to look at any old code and just look at new code. In this way, you elimate any testing on the old code because you know 100% that the old code isn't broken because you never touched it!
 
+### When should you use the factory pattern?
+
 ### Other Factory Pattern references
 * https://www.youtube.com/watch?v=EcFVTgRHJLM
