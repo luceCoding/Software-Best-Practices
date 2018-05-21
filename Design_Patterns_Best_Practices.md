@@ -37,5 +37,9 @@ Don't code to an implementation(concrete class), instead code to an interface(ab
 * No class should derive from a concrete class.
 * No method should override an implemented method of any of its base class. (If you do this, your base class wasn't even an abstraction to begin with)
 
-### Factory Pattern
+# Factory Pattern
+### Definition
 Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+### Why we need the factory pattern?
+In our programming, we ideally want to program by wishful thinking. Our method takes in or uses something that is passed into it and assume we already have 'said thing' to perform some opertion which satisfies the intended behavior of your method. Your method follows dependency injection, which is good. However, sooner or later, this 'said thing' that is passed into your method must be created. This is where the line between abstraction and concrete will need to be defined. This is a good place for the factory pattern.
