@@ -43,3 +43,6 @@ Defines an interface for creating an object, but lets subclasses decide which cl
 
 ### Why we need the factory pattern?
 In our programming, we ideally want to program by wishful thinking. Our method takes in or uses something that is passed into it and assume we already have 'said thing' to perform some opertion which satisfies the intended behavior of your method. Your method follows dependency injection, which is good. However, sooner or later, this 'said thing' that is passed into your method must be created. This is where the line between abstraction and concrete will need to be defined. This is a good place for the factory pattern.
+
+### Other Factory Pattern references
+* https://www.youtube.com/watch?v=EcFVTgRHJLM
