@@ -30,10 +30,10 @@
 
 ### Notes
 When creating concrete objects, this is an area of frequent change and usually requires encapsulation with a design pattern.
-Don't code to an implementation(concrete class), instead code to an interface(abstract class).
+Don't code to an implementation(concrete class), instead code to an interface(abstract class or an agreed contract between two classes).
 
 ### Follow the Dependency Inversion Principle
-* No variable should hold a reference to a concrete class. (Don't use the new operator for a variable)
+* No variable should hold a reference to a concrete class. (Don't use the new operator for a variable, exceptions include hardcoded strings, we expect these to never really change.)
 * No class should derive from a concrete class.
 * No method should override an implemented method of any of its base class. (If you do this, your base class wasn't even an abstraction to begin with)
 
