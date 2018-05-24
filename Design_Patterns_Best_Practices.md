@@ -50,5 +50,8 @@ If you wanted to change this concrete instance in the future, how would you like
 
 ### When should you use the factory pattern?
 
+### Factory Pattern Vs. Abstract Factory Pattern
+Both are very similar, however, each serve a slightly different purpose. If you have a bunch of different objects you need to create, go with the factory pattern. If you have a set of different objects to create, go with the abstrat factory. One is very focused on creating individual objects while the other is focused on creating a family of invdividual objects.
+
 ### Other Factory Pattern references
 * https://www.youtube.com/watch?v=EcFVTgRHJLM
