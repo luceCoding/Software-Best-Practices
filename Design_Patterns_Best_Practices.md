@@ -19,8 +19,10 @@
 * Strategy
 * Observer
 * Factory
+* Abstract Factory
 * Decorator
 * Singleton
+* State
 
 ### Design Patterns Categories
 * Creational: ways and means of object instantiation
