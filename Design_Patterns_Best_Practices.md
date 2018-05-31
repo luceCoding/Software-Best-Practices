@@ -57,3 +57,21 @@ Both are very similar, however, each serve a slightly different purpose. If you 
 
 ### Other Factory Pattern references
 * https://www.youtube.com/watch?v=EcFVTgRHJLM
+
+# Singleton Pattern
+```
+class Singleton(object):
+    __instance = None
+    
+    @classmethod
+    def get_instance(cls):
+        if not cls.__instance:
+            cls.__instance = Singleton()
+        return cls.__instance
+    
+s1 = Singleton()
+s2 = Singleton()
+
+print s1.get_instance()
+print s2.get_instance()
+```
