@@ -75,3 +75,19 @@ s2 = Singleton()
 print s1.get_instance()
 print s2.get_instance()
 ```
+
+```
+class Singleton(object):
+    __instance = None
+    
+    def __new__(self):
+        if not self.__instance:
+            self.__instance = super(Singleton, self).__new__(self)
+        return self.__instance
+    
+s1 = Singleton()
+s2 = Singleton()
+
+print s1
+print s2
+```
