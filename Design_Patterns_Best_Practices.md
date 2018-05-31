@@ -91,3 +91,23 @@ s2 = Singleton()
 print s1
 print s2
 ```
+
+```
+def Singleton(myClass):
+    __instances = dict()
+    def get_instance(*args, **kwargs):
+        if myClass not in __instances:
+            __instances[myClass] = myClass(*args, **kwargs)
+        return __instances[myClass]
+    return get_instance
+
+@Singleton
+class NewClass(object):
+    pass
+  
+my_instance1 = NewClass()
+my_instance2 = NewClass()
+
+print my_instance1
+print my_instance2
+```
