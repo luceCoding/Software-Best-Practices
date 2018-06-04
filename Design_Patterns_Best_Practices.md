@@ -23,12 +23,14 @@
 * Decorator
 * Singleton
 * State
+* Adapter
+* Facade
 
 ### Design Patterns Categories
 * Creational: ways and means of object instantiation
 * Structural: mutual composition of classes or objects
 * Behavioral: how classes or objects interact and distribute responsibilities among them
-* Each can be class-level or object-level
+* Each can be class-level or object-level (Composition Vs. Inheritance)
 
 ### Notes
 When creating concrete objects, this is an area of frequent change and usually requires encapsulation with a design pattern.
