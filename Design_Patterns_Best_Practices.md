@@ -111,3 +111,8 @@ my_instance2 = NewClass()
 print my_instance1
 print my_instance2
 ```
+
+# Adapter Pattern
+There are two interfaces that have slightly different signatures. For example, one interface(Class A) that has a signature named methodA() and the other(Class B) has methodB(). You want these two interfaces to communicate but you want to avoid modifying old code. What do you do? You can implement another interface inbetween these two classes inorder to decouple them apart from knowing each other exists.
+
+You can create an adapter class that inherits from Class A while also HAVING a composition object of Class B. In this way, the client believes the adapter is of Class A and uses it like any other Class A object. If instead your clients wants to use the Class B, you can create an adapter class that inherits from Class B and HAS A Class A object.
